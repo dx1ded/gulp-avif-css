@@ -1,0 +1,25 @@
+{
+  "name": "gulp-avif-css",
+  "version": "1.0.2",
+  "description": "Gulp plugin to use webp & avif in CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dx1ded/gulp-avif-css.git"
+  },
+  "keywords": [
+    "gulp",
+    "avif",
+    "webp",
+    "css"
+  ],
+  "author": "Volodymyr Doskochinskiy <doskovol1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^3.0.0",
+    "through2": "^4.0.2"
+  }
+}
