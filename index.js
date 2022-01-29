@@ -83,18 +83,12 @@ class AvifCSS {
     const rowIndex = position.end.line - 1
     const columnIndex = position.end.column - 1
 
-    const getSelector = (modernExtension) => {
-      return selectors.includes('body')
-        ? `${selectors.join('')}.${modernExtension}`
-        : `.${modernExtension} ${selectors.join('')}`
-    }
-
     ;['avif', 'webp'].forEach((modernExtension) => {
       splitedData.splice(rowIndex, 1, this.changeString(
         splitedData[rowIndex],
         columnIndex,
         `
-          ${getSelector(modernExtension)} {
+          .${modernExtension} ${selectors.join('')} {
             ${rule.property}: ${rule.value.replace(imageExtension, modernExtension)}
           }
         `.replaceAll('\n', '')

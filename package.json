@@ -1,6 +1,6 @@
 {
   "name": "gulp-avif-css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Gulp plugin to use webp & avif in CSS",
   "main": "index.js",
   "scripts": {
