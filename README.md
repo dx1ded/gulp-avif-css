@@ -21,7 +21,7 @@ gulp.src("./src/css/*.css")
     .pipe(gulp.dest("./dist"))
 ```
 
-Include special plugin adds `.avif` or `.webp` class to body (if it supports) into your JavaScript file (provided in HTML file)
+Include special plugin adds `.avif` and `.webp` classes to body (if it supports) into your JavaScript file (add it into head tag)
 
 ```javascript
 import "gulp-avif-css/plugin"
