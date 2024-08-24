@@ -89,7 +89,7 @@ class AvifCSS {
         columnIndex,
         `
           .${modernExtension} ${selectors.join('')} {
-            ${rule.property}: ${rule.value.replace(imageExtension, modernExtension)}
+            ${rule.property}: ${rule.value.replaceAll(imageExtension, modernExtension)}
           }
         `.replaceAll('\n', '')
         )
