@@ -1,10 +1,10 @@
 # gulp-avif-css
 
-> Generates additional expressions with `.webp` & `.avif` classes and appropriate extension
+> Generates additional `.webp` & `.avif` classes for loading a specific image if it's supported by the browser
 
 ## Usage
 
-Install `gulp-avif-css` as a development dependency:
+Install `gulp-avif-css`:
 
 ```shell
 npm install -D gulp-avif-css
@@ -17,11 +17,11 @@ const gulp = require("gulp")
 const avifcss = require("gulp-avif-css")
 
 gulp.src("./src/css/*.css")
-    .pipe(avifcss())
-    .pipe(gulp.dest("./dist"))
+  .pipe(avifcss())
+  .pipe(gulp.dest("./dist"))
 ```
 
-Include special plugin adds `.avif` and `.webp` classes to body (if it supports) into your JavaScript file (add it into head tag)
+Include the special plugin which adds `.avif` and `.webp` classes for `<body>` (if it's supported) into a JavaScript file and load it in `<head>` tag
 
 ```javascript
 import "gulp-avif-css/plugin"
@@ -59,4 +59,4 @@ import "gulp-avif-css/plugin"
 Type: `Array`\
 Default: `["png", "jpg", "jpeg", "JPG", "JPEG"]`
 
-Sets fallback extensions
+Sets extensions that are going to be targeted by the plugin
